@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: roboto;
+    user-select: none;
+    font-weight: 200;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*=========================================================================*/
+body{
+    background:url(images/Meteor.svg) no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+.container h1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.glass{
+    min-height: 95vh;
+    width: 100%;
+    height: 100%;
+    margin: 3%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background-color: rgba(255, 255, 255, .15);      
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+/*=========================================================================*/
+.nav{
+    background: white;
+    width: 95.8%;
+    height: 45px;
+    padding: 2%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo,#menu{
+    margin: 0%;
+}
+.nav h3{
+    margin-left: 10px;
+}
+.nav .mainUL{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    width: fit-content;
+}
+.nav .mainUL li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    border-radius: 110px;
+    border: 1px solid transparent;
+    height: 70%;
+}
+.nav .mainUL li:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.nav .mainUL li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+}
+.neon {
+    text-shadow: 0 1px 0 #f00,
+    0 2px 0 #f00,
+    0 4px 0 #60f,
+    -2px 2px 15px #f06,
+    2px 2px 15px #f06,
+    -2px 2px 15px #f06,
+    2px 2px 15px #f06;
+    font-family: Fasthand;
+}
+#cascadedCategories{
+    position: relative;
+    right: 32%;
+}
+.cascadedMenu{    
+    padding: 1%;
+    width: fit-content;
+    display: none;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    float: right;
+}
+#menu{
+    display: block;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    right: 0px;
+}
+.nav .subUL{
+    list-style: none;
+}
+.nav .subUL li{
+    display: grid;
+    place-items: center;
+    /**/
+    height: fit-content;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    border: 1px solid transparent;
+    border-radius: 110px;
+    min-width: 100px;
+}
+.nav .subUL li:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.nav .subUL li a{
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+.hamburger_button_space{
+    display: none;
+}
+/*=========================================================================*/
+.my-img{
+    width: 50%;
+}
+/*=========================================================================*/
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(45deg,transparent,#f06);
+    border-radius: 0px 0px 10px 0px;
+}
+.quoteSpace{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    opacity: 0;
+}
+.quote{
+    font-weight: 100;
+    font-family: 'Agdasima', sans-serif;
+}
+.quoteReference{
+    transform:skewX(12deg);
+}
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+.carousel .quoteSpace:nth-child(1) {
+    animation: slide 22s infinite;
+}
+
+.carousel .quoteSpace:nth-child(2) {
+    animation: slide 22s infinite 2s;
+}
+
+.carousel .quoteSpace:nth-child(3) {
+    animation: slide 22s infinite 4s;
+}
+
+.carousel .quoteSpace:nth-child(4) {
+    animation: slide 22s infinite 8s;
+}
+
+.carousel .quoteSpace:nth-child(5) {
+    animation: slide 22s infinite 10s;
+}
+
+.carousel .quoteSpace:nth-child(6) {
+    animation: slide 22s infinite 12s;
+}
+
+.carousel .quoteSpace:nth-child(7) {
+    animation: slide 22s infinite 14s;
+}
+
+.carousel .quoteSpace:nth-child(8) {
+    animation: slide 22s infinite 16s;
+}
+
+.carousel .quoteSpace:nth-child(9) {
+    animation: slide 22s infinite 18s;
+}
+
+.carousel .quoteSpace:nth-child(10) {
+    animation: slide 22s infinite 20s;
+}
+.quote,.quoteReference{
+    text-align: center;    
+}
+/*=========================================================================*/
+.main{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 70%;
+}
+.main-card{
+    color: aliceblue;
+    margin: 1%;
+    height: fit-content;
+    width: fit-content;
+    transition: .3s;
+}
+.main-card:hover{
+    filter:contrast(120%);
+}
+.main-card img{
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.main-card p{
+    text-align: center;
+}
+.sub{
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+}
+.sub-card{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, .2);
+    border: none;
+    text-align: center;
+    transition: .3s;
+}
+.sub-card:hover{
+    transform: scale(1.01);
+}
+.sub-card img{
+    height: 10%;
+    width: 10%;
+    border-radius: 3px 0px 0px 3px;
+}
+.sub-card p{
+    margin-top: 5px;
+    margin-right: 5%;
+    color: aliceblue;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background: #f06;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1%;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.footer ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.footer ul li a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social svg{
+    margin: 10px;
+}
+.social svg:hover{
+    transform: scale(1.09);
+}
+/*=========================================================================*/
+/*===============================Media Queries=============================*/
+/*=========================================================================*/
+
+/*settings fit for back img*/
+@media only screen and (max-width: 600px) {
+body{
+    background-size: cover;
+}
+.nav{
+    height: fit-content;
+}
+.nav #menu{
+    width: 100%;
+}
+.nav h3{
+    font-size: medium;
+    margin: 10px;
+    text-align: center;
+    width: fit-content;
+}
+.nav .mainUL{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.nav .mainUL li,.nav .subUL .li{
+    margin: 0%;
+    border: 1px solid transparent;
+    width: 100%;
+}
+.nav .subUL{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0%;
+    padding: 0%;
+    padding-top: 10px;
+}
+.nav .subUL li,.nav .subUL li a,.nav .subUL li:hover{
+    padding: 0%;
+    border-radius: 0%;
+    border: none;
+    margin: 0%;
+}
+#cascadedCategories{
+    position: absolute;
+    left: 0%;
+}
+.cascadedMenu{
+    width: 100%;
+    padding: 0%;
+    position: absolute;
+    left: 0%;
+}
+.subUL li,.subUL li a{
+    width: 100%;
+    text-align: center;
+}
+.hamburger_button_space{
+    display: block;
+}
+#ham{
+    background: url(images/icons/ham.svg) no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    height: 2rem;
+    width: 2rem;
+}
+#menu{
+    display: none;
+}
+.carousel{
+    font-size: x-small;
+}
+.hamburger_button_space button{
+    height: 45px;
+    width: 45px;
+    border: none;
+    background: transparent;
+}
+.hamburger_button_space button:hover{
+    transform: scale(1.01);
+}
+.container{
+    flex-direction: column;
+}
+.main, .sub{
+    width: fit-content;
+}
+.footer{
+    margin-top: 10px;
+    padding: 3%;
+    flex-direction: column;
+}
+.footer ul li{
+    justify-content: center;
+    margin: 3px;
+}
+.social{
+    justify-content: flex-end;
+}
+.footer ul li a:hover{
+    border-bottom: 2px solid transparent;
+}}
